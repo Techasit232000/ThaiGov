@@ -1,0 +1,1 @@
+This folder contains synthetic sample files for demo. Do not place real malware here.
