@@ -1,0 +1,98 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\wetay> from llm_core import NationalLLM
+At line:1 char:1
++ from llm_core import NationalLLM
++ ~~~~
+The 'from' keyword is not supported in this version of the language.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : ReservedKeywordNotAllowed
+
+PS C:\Users\wetay> from forecast_model import ForecastModel
+At line:1 char:1
++ from forecast_model import ForecastModel
++ ~~~~
+The 'from' keyword is not supported in this version of the language.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : ReservedKeywordNotAllowed
+
+PS C:\Users\wetay> from anomaly_detection import AnomalyDetector
+At line:1 char:1
++ from anomaly_detection import AnomalyDetector
++ ~~~~
+The 'from' keyword is not supported in this version of the language.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : ReservedKeywordNotAllowed
+
+PS C:\Users\wetay>
+PS C:\Users\wetay> class AICore:
+>>
+>>     def __init__(self):
+>>         self.llm = NationalLLM()
+>>         self.forecast = ForecastModel()
+>>         self.anomaly = AnomalyDetector()
+>>
+At line:2 char:8
++     def __init__(self):
++        ~
+Missing 'class' body in 'class' declaration.
+At line:3 char:32
++         self.llm = NationalLLM()
++                                ~
+An expression was expected after '('.
+At line:4 char:39
++         self.forecast = ForecastModel()
++                                       ~
+An expression was expected after '('.
+At line:5 char:40
++         self.anomaly = AnomalyDetector()
++                                        ~
+An expression was expected after '('.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingTypeBody
+
+PS C:\Users\wetay>     def process(self, data):
+At line:1 char:21
++     def process(self, data):
++                     ~
+Missing argument in parameter list.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingArgument
+
+PS C:\Users\wetay>         prediction = self.forecast.predict(data)
+data : The term 'data' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:44
++         prediction = self.forecast.predict(data)
++                                            ~~~~
+    + CategoryInfo          : ObjectNotFound: (data:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\wetay>         anomaly_flag = self.anomaly.detect(data)
+data : The term 'data' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:44
++         anomaly_flag = self.anomaly.detect(data)
++                                            ~~~~
+    + CategoryInfo          : ObjectNotFound: (data:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\wetay>         analysis = self.llm.analyze(data)
+data : The term 'data' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:37
++         analysis = self.llm.analyze(data)
++                                     ~~~~
+    + CategoryInfo          : ObjectNotFound: (data:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\wetay>
+PS C:\Users\wetay>         return {
+>>             "prediction": prediction,
+>>             "anomaly": anomaly_flag,
+>>             "analysis": analysis
+>>         }
+>>
