@@ -1,0 +1,17 @@
+Internet Diagnostic Tool
+General
+Diagnostic Time2026-09-21T22:54:20+00:00
+Local Machine's Time2026-09-21T22:54:19+00.00
+Connection
+IP Address58.8.12.167
+ISP CodeAS17552 True Online
+CountryThailand (TH)
+CDN Serverth-bkk-true-23
+DNS Settings
+DNS IP Address(V4)119.46.241.2, 203.144.207.45
+DNS ISPAS7470 TRUE INTERNET Co.,Ltd.
+Country
+Thailand (TH)
+
+Client
+User AgentMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 OPR/124.0.0.0
